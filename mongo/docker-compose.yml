@@ -4,8 +4,8 @@ services:
     image: mongo
     restart: always
     volumes:
-      - './data/db:/data/db'
-      - './data/configdb:/data/configdb'
+      - ~/.docker-conf/mongodb/data/db:/data/db
+      - ~/.docker-conf/mongodb/data/configdb:/data/configdb
     environment:
       - 'MONGO_INITDB_ROOT_USERNAME:root'
       - 'MONGO_INITDB_ROOT_PASSWORD:123'

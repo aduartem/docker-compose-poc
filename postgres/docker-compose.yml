@@ -4,7 +4,7 @@ services:
     image: 'postgres:latest'
     restart: always
     volumes:
-      - './postgres_data:/var/lib/postgresql/data'
+      - ~/.docker-conf/postgres/data:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=123
     ports:

@@ -12,4 +12,4 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./data/db:/var/lib/mariadb
+      - ~/.docker-conf/mariadb/data/db:/var/lib/mariadb
